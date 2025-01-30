@@ -16,6 +16,7 @@ import ListItemText from "@mui/material/ListItemText";
 import Button from "@mui/material/Button";
 import { Stack } from "@mui/material";
 import { NavHashLink } from "react-router-hash-link";
+import Typography from "@mui/material/Typography";
 
 const drawerWidth = 240;
 const navItems = [
@@ -43,12 +44,12 @@ export default function Navbar(props) {
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
-      <img
-        src={logo}
-        alt="Techover"
-        width={"150px"}
-        style={{ margin: "8px 0px" }}
-      />
+      <Box>
+      <Typography variant="h6" color="text.secondary">Mikael Tuvesson</Typography>
+      <Typography variant="body2" color="text.secondary">
+        WEB DEVELOPER
+      </Typography>
+    </Box>
       <Divider />
       <List>
         {navItems.map((item, i) => (
@@ -97,7 +98,12 @@ export default function Navbar(props) {
           >
             {/* Logotyp */}
             <Link to="/" style={{ textDecoration: "none" }}>
-              <img src={logo} alt="Techover" width={"150px"} />
+            <Box sx={{ textAlign: "center" }}>
+    <Typography variant="h6" color="text.secondary">Mikael Tuvesson</Typography>
+    <Typography variant="body2" color="text.secondary">
+      WEB DEVELOPER
+    </Typography>
+  </Box>
             </Link>
 
             {/* Länkar för större skärmar */}
