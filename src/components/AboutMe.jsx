@@ -37,7 +37,7 @@ export default function AboutMe({
           spacing={4}
         >
           <Grid item xs={12} md={6} lg={4}>
-            <Box component={"img"} src={profilePicture} width="100%" />
+            <Box component={"img"} src={profilePicture} width="600px" margin="0px -100px"/>
           </Grid>
           <Grid item xs={12} md={6} lg={6}>
             <Stack direction={"column"} spacing={4}>
