@@ -4,7 +4,7 @@ import passGen from "../assets/Linkedin-pw-gen-v2.jpg";
 import klarna from "../assets/Linkedin-klarna@2x.jpg";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
-import micHero from "../assets/mic-blue.png";
+import micHero from "../assets/mic-hero.png";
 
 export const COPY = {
   hero: {
